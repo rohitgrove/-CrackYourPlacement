@@ -56,9 +56,9 @@ public class SortColors {
         method2(nums);
     }
 
-    public static void printArr(int array[]) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+    public static void printArr(int nums[]) {
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + " ");
         }
         System.out.println();
     }
