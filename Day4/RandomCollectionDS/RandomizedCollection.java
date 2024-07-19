@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class RandomizedCollection {
-    private List<Integer> arr;
-    private Map<Integer, Set<Integer>> map;
+    public List<Integer> arr;
+    public Map<Integer, Set<Integer>> map;
 
     public RandomizedCollection() {
         arr = new ArrayList<>();
