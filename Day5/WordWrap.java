@@ -30,6 +30,6 @@ public class WordWrap {
     public static void main(String[] args) {
         int[] nums = { 3, 2, 2, 5 };
         int k = 6;
-        System.out.println(solveWordWrap(nums, k)); // Example usage
+        System.out.println(solveWordWrap(nums, k));
     }
 }
