@@ -1,0 +1,22 @@
+import java.util.Stack;
+
+public class KthSmallest {
+    public int kthSmallest(TreeNode root, int k) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode current = root;
+        int n = 0;
+
+        while (current != null || !stack.isEmpty()) {
+            while (current != null) {
+                stack.push(current);
+                current = current.left;
+            }
+            current = stack.pop();
+            n++;
+            if (n == k) return current.val;
+            current = current.right;
+        }
+
+        return -1;
+    }
+}
